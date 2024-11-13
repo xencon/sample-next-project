@@ -1,0 +1,66 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+:root {
+  background-image: url("https://www.xenithconsulting.com/images/slider/slider-bg.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  z-index: 999;
+  opacity: 1;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    background-image: url(https://www.xenithconsulting.com/images/slider/slider-bg.png);
+    width: 100%;
+    top: 0px;
+    z-index: 999;
+    opacity: 1;
+  }
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.home-1 {
+  background-image: url("https://www.xenithconsulting.com/images/slider/slider-bg.png");
+  width: 100%;
+  position: relative;
+  left: 0px;
+  top: 0px;
+  z-index: 999;
+  opacity: 1;
+}
+
+.home-2 {
+  background-image: url("https://www.xenithconsulting.com/images/slider/slider-bg.png");
+  width: 100%;
+  position: relative;
+  left: -390px;
+  top: 0px;
+  z-index: 998;
+  opacity: 0;
+  transition: opacity 600ms;
+}
+
+.home-3 {
+  background-image: url("https://www.xenithconsulting.com/images/slider/slider-bg.png");
+  width: 100%;
+  position: relative;
+  left: -780px;
+  top: 0px;
+  z-index: 998;
+  opacity: 0;
+  transition: opacity 600ms;
+}
